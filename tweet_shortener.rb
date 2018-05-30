@@ -32,8 +32,5 @@ def word_substituter(tweet_string)
 end
 
 def bulk_tweet_shortener(tweet_array)
-  #input: arr of tweet strings
-    #pass to word_substituter
-    #replace value with new value
-  #output: shortened array
+  tweet_array.map {|tweet| word_substituter(tweet)}
 end
