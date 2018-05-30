@@ -18,12 +18,13 @@ end
 
 def word_substituter(tweet_string)
   tweet_arr = tweet_string.split(" ")
+  replaced_arr = []
   
-  replaced_arr = tweet_arr.map.with_index do |word, i|
+  tweet_arr.map.with_index do |word, i|
     if dictionary.has_key?(word)
-      tweet_arr[i] = dictionary[word.to_sym]
+      replaced_arr[i] << dictionary[word.to_sym]
     else
-      word
+      replaced_arr << word
     end
   end
   
