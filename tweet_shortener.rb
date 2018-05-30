@@ -28,7 +28,6 @@ def word_substituter(tweet_string)
     end
   end
   
-  puts replaced_arr
   replaced_arr.join(" ")
       
   #input: String
