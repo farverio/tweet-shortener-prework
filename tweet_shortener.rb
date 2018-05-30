@@ -29,13 +29,6 @@ def word_substituter(tweet_string)
   end
   
   replaced_arr.join(" ")
-      
-  #input: String
-    #convert to Array
-    #check for match
-    #replace with sub 
-    #convert to String
-  #output: shortened
 end
 
 def bulk_tweet_shortener(tweet_array)
