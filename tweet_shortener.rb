@@ -20,7 +20,8 @@ def word_substituter(tweet_string)
   tweet_arr = tweet_string.split(" ")
   
   replaced_arr = tweet_arr.map.with_index do |word, i|
-    puts dictionary[word.to_sym]
+    puts word
+    # puts dictionary[word.to_sym]
     if dictionary.has_key?(word)
       tweet_arr[i] = dictionary[word]
     else
