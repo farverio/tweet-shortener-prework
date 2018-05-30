@@ -20,7 +20,7 @@ def word_substituter(tweet_string)
   tweet_arr = tweet_string.split(" ")
   
   replaced_arr = tweet_arr.map.with_index do |word, i|
-    puts dictionary[:word]
+    puts dictionary[:hello]
     if dictionary.has_key?(word)
       tweet_arr[i] = dictionary[word]
     else
