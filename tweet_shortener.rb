@@ -21,7 +21,7 @@ def word_substituter(tweet_string)
   replaced_arr = []
   
   tweet_arr.map.with_index do |word, i|
-    if dictionary.has_key?(word)
+    if dictionary.has_key?(word.to_sym)
       replaced_arr[i] << dictionary[word.to_sym]
     else
       replaced_arr << word
